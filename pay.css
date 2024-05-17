@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+#popup-container, #congrats-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+#qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#congrats-container {
+    text-align: center;
+}
+#congrats-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#congrats-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #02b7ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#congrats-container button:hover {
+    background-color: #02b7ff; /* Change the background color on hover */
+}

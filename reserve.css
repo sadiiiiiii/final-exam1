@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+
+.container {
+    background-color: white;
+    border: 2px solid black; 
+    border-radius: 15px;
+    padding: 20px;
+    opacity: 80%;
+    width: 300px;
+    height: auto;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+input {
+    border-color: grey;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px; 
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(217, 217, 216);
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(154, 62, 31);
+    color: white;
+    opacity: 100%;
+}
+
+.btn.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color:rgb(91, 33, 33) ;
+    padding: 7px;
+    padding-left:17px ;
+    padding-right: 17px;
+
+}

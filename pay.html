@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Popup</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body onload="openPaymentPopup()" background="OIG.jpg">
+
+<div class="overlay" id="overlay"></div>
+
+<div id="popup-container">
+    <button onclick="closePaymentPopup()">X</button>
+    <div>
+        <img id="qr-code" src="QRcode.jpg" alt="QR Code for Payment">
+    </div>
+</div>
+
+<div id="congrats-container">
+    <p>Ordered successfully!</p>
+    <button onclick="redirectToHomeAndDeleteOrderItems()">Home</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+<script src="pay.js"></script>
+</body>
+</html>

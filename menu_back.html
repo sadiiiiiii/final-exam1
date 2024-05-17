@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Entering restaurant data</title>
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="title_container">
+        <span id="content">
+          <h2 class="typedtext"></h2>
+        </span>
+        <h2 id="sub_header"> Firebase Database exercise</h2>
+      </div>
+
+      <div id="form_container">
+        <input placeholder="itemcname" type="text" id="itemname"/>
+        <input placeholder="item disc" type="text" id="itemdisc"/>
+        <input placeholder="item price" type="number" id="itemprice"/>
+        <input placeholder="image" type="url" id="itemimage"/>
+      </div>
+
+      <div id="button_container">
+        <button id="put" onclick="save()"> SUBMIT </button>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+  <script src="menu_back.js"></script>
+
+</html>
